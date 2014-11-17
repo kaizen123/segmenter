@@ -42,4 +42,4 @@ end
 
 %% Test Nils's Code
 
-[ A B C] = Full_Seg2( lclimg );
+[ A B C] = cleanFull_Seg2( lclimg );

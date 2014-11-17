@@ -84,6 +84,8 @@ for ii = 1 : ncol
             stats.eccentricity = ...
                 sqrt(1 - ( S(:,1) ./ S(:,2) ).^2); % <<http://en.wikipedia.org/wiki/Eccentricity_(mathematics)#Values>>
             stats.eccentricity( b, : ) = 0;
+            stats.angle = atand( ... 
+                        stats.std(:,2) ./ stats.std(:,1) );
         end %iscell
     end %jj
 end %ii
